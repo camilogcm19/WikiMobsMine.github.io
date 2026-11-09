@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mobs | Minecraft Wiki</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="mobs">
+<div class="lado izq" id="izq"></div>
+<div class="lado der" id="der"></div>
+
+<main class="principal">
+  <!-- Filtros -->
+  <div class="barra">
+    <small>MINECRAFT: WIKI MOBS</small>
+    <div class="tabs" id="tabs">
+      <button class="on" data-f="Todos">Todos</button>
+      <button data-f="Hostil">Hostiles</button>
+      <button data-f="Neutral">Neutrales</button>
+      <button data-f="Pasivo">Pasivos</button>
+      <button data-f="Jefe">Jefes</button>
+    </div>
+  </div>
+
+  <section>
+    <div class="titulo"><h2>Catálogo de Mobs</h2></div>
+    <div class="grid" id="grid"></div>
+  </section>
+  <footer class="pie">Proyecto escolar · Minecraft es una marca de Mojang Studios</footer>
+</main>
+
+<div class="modal" id="modal"><div class="box" id="box"></div></div>
+<script src="js/comun.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/login.js"></script>
+<script src="js/mobs.js"></script>
+</body>
+</html>

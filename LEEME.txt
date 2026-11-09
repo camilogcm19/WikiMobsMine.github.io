@@ -1,0 +1,38 @@
+MINECRAFT WIKI - SUPABASE + GITHUB PAGES
+=========================================
+
+PARTE 1 - SUPABASE (base de datos y login)
+1. Entra a https://supabase.com, crea una cuenta y un proyecto nuevo (New project).
+   Guarda la contraseña de la base de datos que elijas.
+2. Menú izquierdo > SQL Editor > New query.
+   Abre el archivo supabase_setup.sql, copia todo, pégalo y presiona RUN.
+   Debe decir "Success". Esto crea la tabla "usuarios".
+3. Menú izquierdo > Project Settings > API.
+   Copia "Project URL" y la llave "anon public".
+4. Abre js/supabase-config.js y pega esos dos datos en "url" y "key".
+5. (Recomendado para pruebas) Authentication > Sign In / Providers > Email:
+   apaga "Confirm email". Así el usuario entra al instante al registrarse.
+   Si lo dejas encendido, Supabase manda un correo de confirmación.
+
+PARTE 2 - GITHUB PAGES (publicar la página)
+1. Crea una cuenta en https://github.com y un repositorio nuevo (público),
+   por ejemplo "minecraft-wiki".
+2. Sube TODOS los archivos de esta carpeta al repositorio
+   (Add file > Upload files; arrastra index.html, mobs.html, css, js e img).
+   index.html debe quedar en la raíz del repositorio.
+3. Settings > Pages > Build and deployment:
+   Source: "Deploy from a branch", Branch: main, carpeta: / (root). Save.
+4. Espera 1 o 2 minutos. Tu página quedará en:
+   https://TU-USUARIO.github.io/minecraft-wiki/
+5. Vuelve a Supabase > Authentication > URL Configuration:
+   pon esa dirección en "Site URL" (y en Redirect URLs). Save.
+
+NOTAS
+- GitHub distingue mayúsculas: "Creeper.png" y "creeper.png" son distintos.
+  Los nombres de tus imágenes ya coinciden con el código.
+- Si cambias algo, vuelve a subir el archivo a GitHub y espera un minuto.
+- Ver usuarios: Supabase > Table Editor > usuarios (perfiles) o
+  Authentication > Users (correos).
+- Las contraseñas las guarda Supabase con hash; tú nunca las ves.
+- Para probar en tu PC sin GitHub puedes usar Live Server: el login también
+  funciona porque se conecta directo a Supabase por internet.

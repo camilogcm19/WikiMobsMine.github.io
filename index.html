@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft Wiki</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="inicio">
+<div class="lado izq" id="izq"></div>
+<div class="lado der" id="der"></div>
+
+<main class="principal">
+  <section class="hero">
+    <div class="nube" style="top:14%;animation-duration:60s"></div>
+    <div class="nube" style="top:30%;animation-duration:85s;animation-delay:-30s"></div>
+
+    <h1>MINECRAFT WIKI</h1>
+
+    <!-- ZOMBI BAILANDO -->
+    <div class="baile">
+      <!-- GIF: guarda tu gif en img/zombie.gif y se mostrará en lugar del zombi animado -->
+      <img src="img/zombie.gif" alt="Zombi bailando" hidden onload="this.hidden=false;this.nextElementSibling.style.display='none'">
+      <svg viewBox="0 0 16 32" shape-rendering="crispEdges" aria-label="Zombi bailando">
+        <g class="z">
+          <g class="legL"><rect x="4" y="20" width="4" height="12" fill="#3b3bb0"/><rect x="4" y="30" width="4" height="2" fill="#555"/></g>
+          <g class="legR"><rect x="8" y="20" width="4" height="12" fill="#3b3bb0"/><rect x="8" y="30" width="4" height="2" fill="#555"/></g>
+          <rect x="4" y="8" width="8" height="12" fill="#00a8a8"/>
+          <rect x="6" y="8" width="4" height="1" fill="#007f7f"/>
+          <g class="armL"><rect x="0" y="8" width="4" height="4" fill="#00a8a8"/><rect x="0" y="12" width="4" height="8" fill="#5b8c4a"/></g>
+          <g class="armR"><rect x="12" y="8" width="4" height="4" fill="#00a8a8"/><rect x="12" y="12" width="4" height="8" fill="#5b8c4a"/></g>
+          <g class="cab">
+            <rect x="4" y="0" width="8" height="8" fill="#5b8c4a"/>
+            <rect x="4" y="0" width="8" height="2" fill="#3d6a30"/>
+            <rect x="5" y="4" width="2" height="1" fill="#111"/><rect x="9" y="4" width="2" height="1" fill="#111"/>
+            <rect x="6" y="6" width="4" height="1" fill="#2f4f26"/>
+            <rect x="11" y="3" width="1" height="1" fill="#4a7a3a"/><rect x="4" y="5" width="1" height="1" fill="#4a7a3a"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="suelo"></div>
+  </section>
+</main>
+<script src="js/comun.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
